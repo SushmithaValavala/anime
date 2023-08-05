@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: white;
+}
+.title1{
+    font-size: 25px;
+    background-color: whitesmoke;
+    color:black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    position:absolute; 
+    left: 500px; 
+    top:6px; 
+    background-color:rgb(242, 150, 166);
+    padding: 13px;
+}
+.title2{
+    font-size: 25px;
+    background-color: whitesmoke;
+    color:black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    position:absolute; 
+    left: 350px; 
+    top:65px; 
+    padding: 13px;
+}
+.container{
+    width: 5000px;
+    height: 400px;
+    display: flex;   
+    background: white;
+
+}
+
+.container .video-list video{
+    width: 10%;
+    padding: 5px 5px  5px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+.container .video-list video{
+    width: 90%;
+    height: 100px;
+    margin: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+.container .video-list video:nth-child(1){
+    margin-top: 0;
+}
+
+
+.container .video-list video:hover,
+.container .video-list .active{
+    transform: scale(1.06);
+    border: 3px solid black;
+}
+
+.container .main-video{
+    width: 90%;
+    padding: 10px;
+    
+}
+.container .main-video video{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border: 4px solid black;
+    down: 50px;
+}
